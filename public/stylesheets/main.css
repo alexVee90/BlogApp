@@ -1,0 +1,192 @@
+#navbar {
+  background-color: black;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  color: white; }
+
+.nav-container {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.brand a {
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem;
+  font-size: 2.5rem; }
+
+.nav-list {
+  display: flex;
+  list-style-type: none; }
+
+.nav-link {
+  text-decoration: none;
+  padding: 2rem;
+  color: white;
+  font-size: 2rem;
+  transition: opacity 0.3s; }
+
+.nav-link:hover {
+  opacity: 0.3; }
+
+.main-header {
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  position: relative; }
+
+.main-header::after {
+  content: '';
+  height: 0.2rem;
+  width: 55rem;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5rem; }
+
+.showcase {
+  max-width: 85%;
+  margin: 5rem auto; }
+
+.card {
+  margin: 2.5rem;
+  box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.6);
+  display: flex; }
+
+.card img {
+  width: 200px;
+  height: 133px; }
+
+.text {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.text h3 {
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.text p {
+  margin: 1rem; }
+
+.text a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem; }
+
+#area {
+  margin: 2rem 0;
+  display: flex; }
+  #area img {
+    max-width: 80rem; }
+  #area #description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 1rem;
+    overflow: hidden; }
+    #area #description p {
+      font-size: 1.8rem;
+      line-height: 2.6; }
+    #area #description span {
+      line-height: 2.6; }
+    #area #description #buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly; }
+
+.comments-area {
+  max-width: 85%;
+  margin: 2rem auto; }
+  .comments-area .comments-card {
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    display: flex;
+    margin: 4rem; }
+    .comments-area .comments-card .comments-item {
+      margin: 1rem; }
+    .comments-area .comments-card .btn-remove {
+      position: absolute;
+      right: 0;
+      font-size: 1rem;
+      padding: 1rem;
+      margin-right: 2rem; }
+  .comments-area .btn {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
+
+.main {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 2rem auto; }
+
+.form-container {
+  max-width: 30%;
+  margin: 5rem auto;
+  background-color: black;
+  color: white;
+  padding: 2rem; }
+  .form-container .form-group {
+    margin: 1rem; }
+    .form-container .form-group label {
+      font-size: 1.5rem;
+      display: block; }
+    .form-container .form-group input, .form-container .form-group textarea {
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 1rem; }
+  .form-container .btn {
+    background-color: #696969;
+    width: 100%;
+    transitions: background 0.3s; }
+    .form-container .btn:hover {
+      background-color: #ff8c00; }
+
+*, ::after, ::before {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box; }
+
+.btn, .btn-remove, .btn-edit {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: background 0.3s; }
+
+.btn {
+  background-color: black;
+  color: white; }
+  .btn:hover {
+    background-color: #696969; }
+
+.btn-remove {
+  background-color: red;
+  color: white; }
+  .btn-remove:hover {
+    background-color: #ffcccb; }
+
+.btn-edit {
+  background-color: yellow;
+  color: black; }
+  .btn-edit:hover {
+    background-color: lightgoldenrodyellow; }

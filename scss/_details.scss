@@ -1,0 +1,75 @@
+#area {
+  margin: 2rem 0;
+  display: flex;
+
+  img { 
+    max-width: 80rem;
+  }
+
+  #description { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 1rem;
+    overflow: hidden;
+
+    p { 
+      font-size: 1.8rem;
+      line-height: 2.6;
+    }
+    span { 
+      line-height: 2.6;
+    }
+    #buttons { 
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.comments-area { 
+  max-width: 85%;
+  margin: 2rem auto;
+
+  .comments-card { 
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    display: flex;
+    margin: 4rem;
+
+    .comments-item { 
+      margin: 1rem;
+    }
+    .btn-remove { 
+      position: absolute;
+      right: 0;
+      font-size: 1rem;
+      padding: 1rem;
+      margin-right: 2rem;
+    }
+  }
+
+  .btn { 
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+.main { 
+  font-size: 1.8rem; 
+  text-align: center;
+  margin: 2rem auto;
+}
+
+
+
+
+
+

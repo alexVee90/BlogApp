@@ -1,0 +1,23 @@
+{
+  "name": "restfullapp",
+  "version": "1.0.0",
+  "description": "app based on the REST methodology",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "sass": "node-sass -w scss/ -o public/stylesheets --recursive"
+  },
+  "author": "Alex Visan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.8.3",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

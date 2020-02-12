@@ -1,0 +1,16 @@
+<%- include('../partials/header') %> 
+<h1 class="main-header">Welcome to the blog List</h1>
+<div class="showcase">
+  <% blogList.forEach(blog => { %>
+    <div class="card">
+      <img src="<%= blog.image %>" alt="blogPhoto">
+      <div class="text">
+        <h3><%= blog.title %></h3>
+        <p><%= blog.desc %></p>
+        <a href="/blogs/<%= blog._id %>">More info</a>
+      </div>
+    </div>
+    
+  <% }) %>
+</div>
+<%- include('../partials/footer') %>

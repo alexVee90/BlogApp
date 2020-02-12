@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<h2 class="main-header"  >Add a post</h2>
+<form action="/blogs" method="POST">
+  <div class="form-container">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input name="title" id="title" type="text">
+    </div>
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      <input name="image" id="iage" type="text">
+    </div>
+    <div class="form-group">
+      <label for="desc">Description</label>
+      <textarea name="desc" id="" cols="30" rows="10"></textarea>
+    </div>
+    <button class="btn">Add Post</button>
+  </div>
+</form>
+<%- include('../partials/footer') %>

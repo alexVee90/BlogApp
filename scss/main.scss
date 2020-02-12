@@ -1,0 +1,53 @@
+@import 'navbar';
+@import 'index';
+@import 'details';
+@import 'form';
+
+//general styles
+*, ::after, ::before { 
+  font-size: 10px; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+%sharedButtons { 
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: background 0.3s;
+}
+
+.btn { 
+  @extend %sharedButtons;
+  background-color: black;
+  color: white;
+
+  &:hover { 
+    background-color: #696969;
+  }
+}
+
+.btn-remove { 
+  @extend %sharedButtons;
+  background-color: red;
+  color: white;
+  &:hover { 
+    background-color: #ffcccb;
+  }
+}
+
+.btn-edit { 
+  @extend %sharedButtons;
+  background-color: yellow;
+  color: black;
+  &:hover { 
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+
